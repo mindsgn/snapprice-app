@@ -49,8 +49,12 @@ export default function Details(
         <View
             style={styles.container}
         >
-            <Text style={styles.title}>{title}</Text>
-            <Text style={styles.price}>{price}</Text>
+            <Text 
+                numberOfLines={1}
+                style={styles.title}>{title}</Text>
+            <Text 
+                numberOfLines={1}
+                style={styles.price}>{price}</Text>
             {
                 /*
                 <LineGraph points={[
@@ -79,10 +83,9 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 28,
-        fontWeight: "bold"
     },
     price: {
-        fontSize: 28,
+        fontSize: 20,
         fontWeight: "bold"
     }
 });
